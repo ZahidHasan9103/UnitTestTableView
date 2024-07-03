@@ -24,15 +24,18 @@ final class TableViewControllerTests: XCTestCase {
         super.tearDown()
     }
     
+    //MARK: - Test Delegate is connected
     func test_tableviewDelegates_shouldBeConnected(){
         XCTAssertNotNil(sut.tableView.dataSource, "datasource")
         XCTAssertNotNil(sut.tableView.delegate, "delegate")
     }
     
+    //MARK: - Test numberOfRows
     func test_numberOfRows_shouldBe3(){
         XCTAssertEqual(numberOfRows(in: sut.tableView), 3)
     }
     
+    //MARK: - Test CellForRow at indexPath
     func test_cellForRowAt_withRow0_shouldSetCellLabelToOne(){
         let cell = cellForRow(in: sut.tableView, row: 0)
         XCTAssertEqual(cell?.textLabel?.text, "One")
@@ -46,5 +49,10 @@ final class TableViewControllerTests: XCTestCase {
     func test_cellForRowAt_withRow1_shouldSetCellLabelToThree(){
         let cell = cellForRow(in: sut.tableView, row: 2)
         XCTAssertEqual(cell?.textLabel?.text, "Three")
+    }
+    
+    //MARK: - Test didSelectRow
+    func test_didSelectRow_withRow1(){
+        didSelectRow(in: sut.tableView, row: 1)
     }
 }
