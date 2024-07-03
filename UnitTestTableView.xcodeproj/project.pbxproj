@@ -14,6 +14,7 @@
 		C095373A2C35962A0048FD1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C09537382C35962A0048FD1C /* LaunchScreen.storyboard */; };
 		C095374F2C3596FE0048FD1C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C095374E2C3596FE0048FD1C /* TableViewController.swift */; };
 		C09537512C3597310048FD1C /* TableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09537502C3597310048FD1C /* TableViewControllerTests.swift */; };
+		C09537532C359E550048FD1C /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09537522C359E550048FD1C /* TestHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		C09537452C3596410048FD1C /* UnitTestTableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTestTableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C095374E2C3596FE0048FD1C /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		C09537502C3597310048FD1C /* TableViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerTests.swift; sourceTree = "<group>"; };
+		C09537522C359E550048FD1C /* TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				C09537502C3597310048FD1C /* TableViewControllerTests.swift */,
+				C09537522C359E550048FD1C /* TestHelpers.swift */,
 			);
 			path = UnitTestTableViewTests;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C09537512C3597310048FD1C /* TableViewControllerTests.swift in Sources */,
+				C09537532C359E550048FD1C /* TestHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

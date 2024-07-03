@@ -15,6 +15,10 @@ class TableViewController: UITableViewController {
     "Three"
     ]
     
+    deinit{
+        print("TableViewController.Deinit()")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
